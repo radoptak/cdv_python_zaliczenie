@@ -12,8 +12,8 @@ class CreatAccountPage:
         self.month_of_birth_select_id = 'months'
         self.year_of_birth_select_id = 'years'
         self.days = self.day_of_birth_option_xpath = '//*[@id="uniform-days"]//select[@id="days"]//option'
-        self.months = self.month_of_birth_option_xpath = '//*[@id="uniform-days"]//select[@id="months"]//option'
-        self.years = self.year_of_birth_option_xpath = '//*[@id="uniform-days"]//select[@id="years"]//option'
+        self.months = self.month_of_birth_option_xpath = '//*[@id="uniform-months"]//select[@id="months"]//option'
+        self.years = self.year_of_birth_option_xpath = '//*[@id="uniform-years"]//select[@id="years"]//option'
         self.newsletter_checkbox_id = 'newsletter'
         self.special_offers_checkbox_id = 'optin'
 
