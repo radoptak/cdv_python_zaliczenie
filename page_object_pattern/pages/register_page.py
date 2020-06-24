@@ -15,3 +15,12 @@ class SignInPage:
 
     def create_account_button(self):
         self.driver.find_element_by_id(self.register_button_id).click()
+
+    def log_in(self, login, password):
+        self.driver.find_element_by_id(self.login_email_input_id).click()
+        self.driver.find_element_by_id(self.login_email_input_id).send_keys(login)
+        self.driver.find_element_by_id(self.login_pwd_input_id).click()
+        self.driver.find_element_by_id(self.login_pwd_input_id).send_keys(password)
+
+    def login_to_account(self):
+        self.driver.find_element_by_id(self.login_button_id).click()
