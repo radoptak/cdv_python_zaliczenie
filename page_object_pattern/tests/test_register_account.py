@@ -36,7 +36,6 @@ class TestRegisterAccount(BaseTest):
         registration_page.set_newsletter()
         registration_page.set_special_offer()
 
-        # registration_page.set_address_user('Roman', 'Kowalski')
         registration_page.set_address_location(users.company, users.address1, users.address2, users.city, users.postal_code)
         registration_page.additional_msg(users.additional_msg)
         registration_page.set_phone_number(users.phone_num)
