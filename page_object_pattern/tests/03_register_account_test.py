@@ -1,5 +1,5 @@
 import pytest
-
+import allure
 from page_object_pattern.pages.create_account_page import CreatAccountPage
 from page_object_pattern.pages.home_page import HomePage
 from page_object_pattern.pages.my_account_page import MyAccountPage
@@ -14,6 +14,8 @@ from uuid import uuid4
 @pytest.mark.usefixtures('setup')
 class TestRegisterAccount(BaseTest):
 
+    @allure.title('Test rejestracji konta')
+    @allure.description('Rejestrowanie nowego użytkownika')
     def test_registration(self, setup):
 
         registration_page = CreatAccountPage(self.driver)

@@ -1,5 +1,5 @@
 import pytest
-
+import allure
 from page_object_pattern.pages.home_page import HomePage
 from page_object_pattern.pages.product_page import ProductPage
 from page_object_pattern.pages.register_page import SignInPage
@@ -15,6 +15,8 @@ from page_object_pattern.tests.utils import items
 @pytest.mark.usefixtures('setup')
 class TestPurchaseCancellation(BaseTest):
 
+    @allure.title('Test anulowania zamówienia')
+    @allure.description('Anulowanie zamówienia')
     def test_item_purchase_cancellation(self, setup):
 
         home_page = HomePage(self.driver)

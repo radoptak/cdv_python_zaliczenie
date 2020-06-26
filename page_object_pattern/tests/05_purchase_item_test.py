@@ -1,3 +1,4 @@
+import allure
 import pytest
 
 from page_object_pattern.pages.address_page import AddressPage
@@ -17,6 +18,8 @@ from page_object_pattern.tests.utils import items
 @pytest.mark.usefixtures('setup')
 class TestPurchaseItem(BaseTest):
 
+    @allure.title('Test zakupu przedmiotu')
+    @allure.description('Zakup przedmiotu')
     def test_item_purchase(self, setup):
 
         home_page = HomePage(self.driver)

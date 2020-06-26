@@ -1,5 +1,5 @@
 import pytest
-
+import allure
 from page_object_pattern.pages.my_account_page import MyAccountPage
 from page_object_pattern.pages.register_page import SignInPage
 from page_object_pattern.pages.home_page import HomePage
@@ -11,6 +11,8 @@ from page_object_pattern.tests.utils import users
 @pytest.mark.usefixtures('setup')
 class TestLogIn(BaseTest):
 
+    @allure.title('Test logowania')
+    @allure.description('Logowanie istniejącym użytkownikiem')
     def test_log_in(self, setup):
 
         sign_in_page = SignInPage(self.driver)
@@ -28,6 +30,5 @@ class TestLogIn(BaseTest):
 
         if header == 'My account':
             assert user == 'Roman Kowalski'
-        else:
-            print('nope')
+
 
