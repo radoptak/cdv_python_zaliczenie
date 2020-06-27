@@ -2,6 +2,15 @@
 Testy automatyczne wybranej aplikacji z użyciem pythona i selenium webdriver.
 Aplikacja: http://automationpractice.com/index.php
 
+WYMAGANIA:
+
+Python 3.x
+
+Chromedriver
+
+Pytest
+
+
 PUSZCZANIE TESTÓW
 
 Wszystkie testy:
