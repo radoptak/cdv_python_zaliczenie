@@ -51,4 +51,3 @@ class TestRegisterAccount(BaseTest):
 
         if header == 'My account':
             assert user == 'Roman Kowalski'
-
