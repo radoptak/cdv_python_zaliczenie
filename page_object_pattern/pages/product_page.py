@@ -31,5 +31,3 @@ class ProductPage:
         price = price_str[1:]
         price_float = float(price)
         return price_float
-
-

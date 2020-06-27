@@ -15,4 +15,3 @@ address1 = 'Polska 6'
 address2 = 'apart 66'
 city = 'Alabama'
 postal_code = '11122'
-

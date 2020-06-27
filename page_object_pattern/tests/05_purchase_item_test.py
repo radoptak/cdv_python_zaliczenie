@@ -1,6 +1,5 @@
 import allure
 import pytest
-
 from page_object_pattern.pages.address_page import AddressPage
 from page_object_pattern.pages.home_page import HomePage
 from page_object_pattern.pages.payment_page import PaymentPage

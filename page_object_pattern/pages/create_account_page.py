@@ -140,10 +140,3 @@ class CreatAccountPage:
     @allure.step('Rejestracja konta')
     def register(self):
         self.driver.find_element_by_id(self.register_button_id).click()
-
-
-
-
-
-
-

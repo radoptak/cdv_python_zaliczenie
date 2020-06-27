@@ -33,5 +33,3 @@ class SummaryPage:
         tax = tax_fee_str[1:]
         tax_float = float(tax)
         return tax_float
-
-

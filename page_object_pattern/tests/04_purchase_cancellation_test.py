@@ -41,5 +41,3 @@ class TestPurchaseCancellation(BaseTest):
         cancellation_alert = summary_page.get_cancel_alert()
 
         assert cancellation_alert == "Your shopping cart is empty."
-
-

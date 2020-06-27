@@ -23,5 +23,3 @@ class TestItemSearch(BaseTest):
 
         result = results_page.get_item_count()
         assert len(result) > 0
-
-

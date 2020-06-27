@@ -1,5 +1,6 @@
 # cdv_python_zaliczenie
 Testy automatyczne wybranej aplikacji z użyciem pythona i selenium webdriver.
+Aplikacja: http://automationpractice.com/index.php
 
 PUSZCZANIE TESTÓW
 
@@ -10,7 +11,7 @@ Wybrany test:
 Komenda 'pytest wybrany_test.py' będąc w folderze 'page_object_pattern/tests'
 
 
-Raporty: Allure
+RAPORTY: Allure
 
 1. Instalacja allure-pytest
 2. Instalacja Allure Framework z https://docs.qameta.io/allure/#_installing_a_commandline
